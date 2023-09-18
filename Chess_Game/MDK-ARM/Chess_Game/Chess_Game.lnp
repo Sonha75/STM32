@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"chess_game\startup_stm32f103xb.o"
+"chess_game\main.o"
+"chess_game\stm32f1xx_it.o"
+"chess_game\stm32f1xx_hal_msp.o"
+"chess_game\lcd_i2c.o"
+"chess_game\stm32f1xx_hal_gpio_ex.o"
+"chess_game\stm32f1xx_hal_i2c.o"
+"chess_game\stm32f1xx_hal.o"
+"chess_game\stm32f1xx_hal_rcc.o"
+"chess_game\stm32f1xx_hal_rcc_ex.o"
+"chess_game\stm32f1xx_hal_gpio.o"
+"chess_game\stm32f1xx_hal_dma.o"
+"chess_game\stm32f1xx_hal_cortex.o"
+"chess_game\stm32f1xx_hal_pwr.o"
+"chess_game\stm32f1xx_hal_flash.o"
+"chess_game\stm32f1xx_hal_flash_ex.o"
+"chess_game\stm32f1xx_hal_exti.o"
+"chess_game\stm32f1xx_hal_tim.o"
+"chess_game\stm32f1xx_hal_tim_ex.o"
+"chess_game\stm32f1xx_hal_uart.o"
+"chess_game\system_stm32f1xx.o"
+--strict --scatter "Chess_Game\Chess_Game.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Chess_Game.map" -o Chess_Game\Chess_Game.axf
